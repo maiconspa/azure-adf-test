@@ -1,0 +1,9 @@
+{
+	"name": "adffiap62asoarqsolucoesrm351133",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b2a8db7b-1df6-442f-b1a5-f0827001b06f",
+		"tenantId": "11dbbfe2-89b8-4549-be10-cec364e59551"
+	}
+}
