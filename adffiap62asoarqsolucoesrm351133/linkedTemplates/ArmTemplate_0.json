@@ -187,7 +187,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/sql_customer_copy1')]",
+			"name": "[concat(parameters('factoryName'), '/sql_sales_order_header')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -267,7 +267,7 @@
 				],
 				"typeProperties": {
 					"schema": "SalesLT",
-					"table": "Customer"
+					"table": "SalesOrderHeader"
 				}
 			},
 			"dependsOn": [
