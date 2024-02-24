@@ -1,5 +1,5 @@
 {
-	"name": "adls_brz_customer",
+	"name": "adls_brz_Customer",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

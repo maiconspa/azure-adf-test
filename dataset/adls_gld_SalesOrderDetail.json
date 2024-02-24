@@ -1,5 +1,5 @@
 {
-	"name": "adls_gld_sales_order_detail",
+	"name": "adls_gld_SalesOrderDetail",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
