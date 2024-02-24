@@ -1,5 +1,5 @@
 {
-	"name": "brz_product",
+	"name": "adls_brz_product",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",

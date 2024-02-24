@@ -1,5 +1,5 @@
 {
-	"name": "adls_brz_customer",
+	"name": "adls_brz_sales_order_header",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -13,7 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Customer",
+				"folderPath": "SalesOrderHeader",
 				"fileSystem": "brz"
 			},
 			"columnDelimiter": ",",
