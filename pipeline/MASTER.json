@@ -1,0 +1,47 @@
+{
+	"name": "MASTER",
+	"properties": {
+		"activities": [
+			{
+				"name": "SRC TO BRZ",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "SRC_TO_BRZ",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "BRZ TO SLV",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "SRC TO BRZ",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "BRZ_TO_SLV",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
