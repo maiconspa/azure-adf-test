@@ -13,6 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "SalesOrderDetail.csv",
 				"folderPath": "SalesOrderDetail",
 				"fileSystem": "gld"
 			},
