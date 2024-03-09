@@ -3,27 +3,11 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "SRC TO BRZ",
-				"type": "ExecutePipeline",
-				"dependsOn": [],
-				"policy": {
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"pipeline": {
-						"referenceName": "SRC_TO_BRZ",
-						"type": "PipelineReference"
-					},
-					"waitOnCompletion": true
-				}
-			},
-			{
 				"name": "BRZ TO SLV",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
-						"activity": "SRC TO BRZ",
+						"activity": "RAW_TO_BRZ",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -59,6 +43,22 @@
 				"typeProperties": {
 					"pipeline": {
 						"referenceName": "SLV_TO_GLD",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "RAW_TO_BRZ",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RAW_TO_BRZ",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
